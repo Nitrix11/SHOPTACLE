@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url('https://example.com/image2.jpg')">
+                <div class="carousel-item two" style="background-image: url('https://example.com/image2.jpg')">
                     <div class="img2">
 
                         <div class="div1 s">
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('https://example.com/image3.jpg')">
+                <div class="carousel-item two" style="background-image: url('https://example.com/image3.jpg')">
                     <div class="img">
 
                         <div class="div1 s">
@@ -298,9 +298,9 @@
     <section id="suits">
         <h1>Designer Suits</h1>
         <hr>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item" style="background-image: url('https://example.com/image1.jpg')">
+        <div class="carousel1">
+            <div class="carousel-inner1">
+                <div class="carousel-item1" style="background-image: url('https://example.com/image1.jpg')">
                     <div class="img">
                         <div class="div1 s">
                             <img src="./Shoptacle Resources/suit1.png" alt="">
@@ -345,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('https://example.com/image2.jpg')">
+                <div class="carousel-item1 two" style="background-image: url('https://example.com/image2.jpg')">
                     <div class="img">
                         <div class="div1 s">
                             <img src="./Shoptacle Resources/suit1.png" alt="">
@@ -390,7 +390,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('https://example.com/image3.jpg')">
+                <div class="carousel-item1 two" style="background-image: url('https://example.com/image3.jpg')">
                     <div class="img">
                         <div class="div1 s">
                             <img src="./Shoptacle Resources/suit4.png" alt="">
@@ -436,8 +436,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-control left" onclick="prevSlide()">&#10094;</div>
-            <div class="carousel-control right" onclick="nextSlide()">&#10095;</div>
+            <div class="carousel-control left1" onclick="prevSlide()">&#10094;</div>
+            <div class="carousel-control right1" onclick="nextSlide()">&#10095;</div>
         </div>
 
         <div class="btn">
@@ -514,26 +514,29 @@
         <h3>@ NYASHA 2024</h3>
 
     </footer>
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-item');
-        const carouselInner = document.querySelector('.carousel-inner');
+    <script src="./sandbox.js">
+        // let currentSlide = 0;
+        // const slides = document.querySelectorAll('.carousel-item');
+        // const carouselInner = document.querySelector('.carousel-inner');
 
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateCarousel();
-        }
+        // function prevSlide() {
+        //     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        //     updateCarousel();
+        // }
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateCarousel();
-        }
+        // function nextSlide() {
+        //     currentSlide = (currentSlide + 1) % slides.length;
+        //     updateCarousel();
+        // }
 
-        function updateCarousel() {
-            carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
+        // function updateCarousel() {
+        //     carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+        // }
 
-        setInterval(nextSlide, 5000000000000000); 
+        // setInterval(nextSlide, 5000000000000000); 
+
+
+        
     </script>
 </body>
 

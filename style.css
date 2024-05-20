@@ -112,6 +112,44 @@ nav .main .div2 {
   right: 20px;
 }
 
+.carousel1 {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.carousel-inner1 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item1 {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.left1 {
+  left: 20px;
+}
+
+.carousel-control.right1 {
+  right: 20px;
+}
+
 #latest .text .div {
   display: flex;
   gap: 200px;
@@ -455,6 +493,9 @@ footer .main .shoptacle {
 }
 
 @media (max-width: 768px) {
+  script {
+    display: none;
+  }
   nav .main {
     gap: 10px;
   }
@@ -643,6 +684,9 @@ footer .main .shoptacle {
   }
   #latest {
     font-size: 10px;
+  }
+  #latest .two {
+    display: none;
   }
   #latest .img {
     display: flex;

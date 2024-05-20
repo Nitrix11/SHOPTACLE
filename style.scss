@@ -135,6 +135,47 @@ nav {
     right: 20px;
 }
 
+.carousel1 {
+    position: relative;
+    width: 100%;
+    // height: 800px;
+    // overflow-x: hidden;
+    padding: 0 10px;
+}
+
+.carousel-inner1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-item1 {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-control1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.left1 {
+    left: 20px;
+}
+
+.carousel-control.right1 {
+    right: 20px;
+}
+
 #latest {
     .text {
         .div {
@@ -601,6 +642,12 @@ footer {
 }
 
 @media(max-width:768px) {
+// .carousel{
+// display: none;}
+// .carousel1{
+// display: none;}
+script{
+display: none;}
     nav {
         .main {
             gap: 10px;
@@ -856,6 +903,7 @@ footer {
 }
 
 @media (max-width:414px) {
+
     nav {
         .main {
             gap: 1px;
@@ -908,6 +956,8 @@ footer {
     }
 
     #latest {
+    .two{
+    display: none};
         .img {
             display: flex;
             flex-direction: column;
