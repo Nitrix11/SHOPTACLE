@@ -18,9 +18,19 @@
                 <div class="img">
                     <!-- <img src="/cart-shopping.svg" alt="" width="15%"> -->
                 </div>
-                <div class="img2">
-                    <img src="./align-left.svg" alt="" width="15%">
-                </div>
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"><img src="./align-left.svg" alt="" width="20%"></i>
+                  </div>
+                  
+                  <nav class="menu">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+              
             </div>
         </div>
 
@@ -221,8 +231,9 @@
 
     </section>
     <section id="scroll">
-        <div class="img">
-            <img src="./Shoptacle Resources/pic2.png" alt="">
+        <div class="image-container">
+            <img src="./Shoptacle Resources/pic2.png" alt="" id="scrollable-image">
+            <img src="./Shoptacle Resources/pic2.png" alt="" id="scrollable-image">
             <div class="text">
                 <h3>Have you heard? You can get up to</h3>
                 <h2>50% Off 5+ <br>Gucci Orders</h2>
@@ -534,7 +545,13 @@
         // }
 
         // setInterval(nextSlide, 5000000000000000); 
+        const image = document.getElementById('scrollable-image');
 
+image.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  const container = event.currentTarget.closest('.image-container');
+  container.scrollTop += event.deltaY;
+});
 
         
     </script>

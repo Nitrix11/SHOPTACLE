@@ -29,6 +29,33 @@ nav .main .div2 {
   display: flex;
   text-align: center;
 }
+nav .main .div2 .hamburger-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+nav .main .div2 .menu {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+}
+nav .main .div2 .menu.active {
+  left: 0;
+}
+nav .main .div2 .menu ul {
+  list-style-type: none;
+}
+nav .main .div2 .menu li {
+  margin-bottom: 10px;
+}
+nav .main .div2 .menu a {
+  color: #333;
+  text-decoration: none;
+}
 
 #hero {
   overflow: hidden;
@@ -242,14 +269,16 @@ nav .main .div2 {
 }
 
 #scroll {
-  overflow: hidden;
   margin-top: 75px;
 }
 #scroll img {
   width: 100%;
 }
-#scroll .img {
+#scroll .image-container {
   position: relative;
+  height: 600px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 #scroll .text {
   position: absolute;
@@ -688,6 +717,15 @@ footer .main .shoptacle {
   #latest .two {
     display: none;
   }
+  #latest script .currentSlide1 {
+    display: none;
+  }
+  #latest script .Slides1 {
+    display: n9ne;
+  }
+  #latest script .nextSlide {
+    display: none;
+  }
   #latest .img {
     display: flex;
     flex-direction: column;
@@ -729,20 +767,24 @@ footer .main .shoptacle {
   #best-seller .img .div1 img {
     width: 100%;
   }
-  #scroll .img {
+  #scroll .image-container {
+    position: relative;
+    height: 200px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
     width: 100%;
   }
-  #scroll .img .text {
+  #scroll .image-container .text {
     top: 70px;
   }
-  #scroll .img .text h3,
-  #scroll .img .text h2 {
+  #scroll .image-container .text h3,
+  #scroll .image-container .text h2 {
     font-size: small;
   }
-  #scroll .img .text2 {
+  #scroll .image-container .text2 {
     font-size: small;
   }
-  #scroll .img img {
+  #scroll .image-container img {
     width: 100%;
   }
   #umbro .images {
@@ -761,6 +803,12 @@ footer .main .shoptacle {
   #umbro .s {
     display: none;
   }
+  #top-notch .text h2 {
+    font-size: 37px;
+  }
+  #top-notch .text p {
+    font-size: 13px;
+  }
   #suits .img {
     padding-left: 50px;
     display: flex;
@@ -778,6 +826,12 @@ footer .main .shoptacle {
   #suits .s {
     display: none;
   }
+  #tommy .text h2 {
+    font-size: 37px;
+  }
+  #tommy .text p {
+    font-size: 13px;
+  }
   #news .text {
     gap: 1px;
     display: flex;
@@ -793,12 +847,21 @@ footer .main .shoptacle {
   #news .email {
     line-height: 0px;
   }
+  #news .email input {
+    border: none;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    width: 74%;
+    font-size: larger;
+    padding: 8px 45px;
+    background-color: rgb(184, 184, 184);
+  }
   #news .email .btns button {
-    padding: 8px 20px;
+    padding: 2px 15px;
   }
   footer .main {
     display: flex;
     flex-direction: column;
-    padding-left: 1px;
+    padding-left: 80px;
   }
 }/*# sourceMappingURL=style.css.map */

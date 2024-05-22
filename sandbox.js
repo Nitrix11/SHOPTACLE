@@ -39,3 +39,9 @@ function updateCarousel() {
 
 setInterval(nextSlide, 5000); 
 
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+    
+  }
+  
